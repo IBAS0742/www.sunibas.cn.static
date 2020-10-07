@@ -7,6 +7,11 @@ if [ ! -x "${homePath}frp_0.22.0" ]; then
   cd "${homePath}frp_0.22.0"
   tar -xvf "${homePath}${staticPath}zips/frp_0.22.0_linux_386.tar.gz"
 fi
+
+if [ ! -x "${homePath}${staticPath}pages" ]; then
+  mkdir "${homePath}${staticPath}pages"
+fi
+
 if [ ! -x "${homePath}${staticPath}pages/geotrellis-docs" ]; then
   mkdir "${homePath}${staticPath}pages/geotrellis-docs"
   cd "${homePath}${staticPath}pages/geotrellis-docs"
