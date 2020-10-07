@@ -1,5 +1,6 @@
 # www.sunibas.cn.static
-主站的静态文件
+
+主站的静态文件，当前文件的位置在 ```/home/ubuntu/www.sunibas.cn.static```
 
 1. pages 站内页面（可能内容超多，所以不要同步到git）
 
@@ -12,6 +13,8 @@
 4. jsons 一些静态资源，是 codes 生成的，所以不需要同步到 git
 
 ## 服务器配置相关
+
+git clone https://github.com/IBAS0742/www.sunibas.cn.static.git
 
 - 主机密码是 ```名字001```
 
