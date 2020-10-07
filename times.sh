@@ -12,6 +12,6 @@ while [ 1 -le 6 ]
 do
   git pull https://github.com/IBAS0742/www.sunibas.cn.static.git
   ./zips/unzip.sh
-  cp -f ./other.conf/frps.ini "${homePath}/frp_0.22.0/frps.ini"
+  cp -f ./other.conf/frps.ini "${homePath}frp_0.22.0/frps.ini"
   sleep $interval;
 done
