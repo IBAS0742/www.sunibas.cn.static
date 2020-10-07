@@ -10,7 +10,7 @@ staticPath="www.sunibas.cn.static/"
 
 while [ 1 -le 6 ]
 do
-  git pull # https://github.com/IBAS0742/www.sunibas.cn.static.git
+  git pull -q # https://github.com/IBAS0742/www.sunibas.cn.static.git
   ./zips/unzip.sh
   cp -f ./other.conf/frps.ini "${homePath}frp_0.22.0/frp_0.22.0_linux_386/frps.ini"
   sleep $interval;
