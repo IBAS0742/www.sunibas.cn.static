@@ -88,6 +88,8 @@ let pic = new (class {
     }
 })(function (pic) {
     fs.writeFileSync(path.join(getStaticPath(),"jsons/bingPic.json"),JSON.stringify(pic,),'utf-8');
+    console.log('获取完成');
+    process.exit();
 });
 
 setInterval(function () {
