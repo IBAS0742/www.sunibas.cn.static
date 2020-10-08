@@ -1,4 +1,12 @@
-sudo apt install default-jre
+tar -zvxf jdk-8u261-linux-x64.tar.gz
+sudo mv jdk1.8.0_261/ /usr/local/jdk8
+sudo vi /etc/profile
+
+> export JAVA_HOME=/usr/local/jdk1.8
+> export JRE_HOME=${JAVA_HOME}/jre
+> export CLASSPATH=.:${JAVA_HOME}/lib:${JRE_HOME}/lib
+> export PATH=.:${JAVA_HOME}/bin:$PATH
+source /etc/profile
 
 sudo apt-get install mysql-server
 
