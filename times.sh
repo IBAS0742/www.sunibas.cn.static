@@ -12,7 +12,9 @@ while [ 1 -le 6 ]
 do
   echo "git pull"
   # 拉取后不要显示文本
-  git pull|echo ^x  # https://github.com/IBAS0742/www.sunibas.cn.static.git
+  # 先退三个版本以保证没有任何修改发生
+  # git reset --hard HEAD~3
+  # git pull|echo ^x  # https://github.com/IBAS0742/www.sunibas.cn.static.git
 
   echo "unzip"
   ./zips/unzip.sh
@@ -24,7 +26,7 @@ do
   sudo cp "${homePath}${staticPath}/nginx.conf/frp.conf" "/etc/nginx/conf.d/"
   sudo cp "${homePath}${staticPath}/nginx.conf/docs.conf" "/etc/nginx/conf.d/"
   sudo cp "${homePath}${staticPath}/nginx.conf/main.conf" "/etc/nginx/conf.d/"
-  sudo cp "${homePath}${staticPath}/nginx.conf/main.https.conf" "/etc/nginx/conf.d/"
+  #sudo cp "${homePath}${staticPath}/nginx.conf/main.https.conf" "/etc/nginx/conf.d/"
   sudo cp "${homePath}${staticPath}/nginx.conf/public.conf" "/etc/nginx/conf.d/"
 
   echo "update bing"

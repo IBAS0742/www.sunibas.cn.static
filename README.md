@@ -18,7 +18,7 @@ git clone https://github.com/IBAS0742/www.sunibas.cn.static.git
 
 - 主机密码是 ```名字001```
 
-- 数据库配置为 MySQL，密码是 ```中英123```
+- 数据库配置为 MySQL，密码是 ```中英(极简)123```
 
 - 端口配置如下
 
@@ -36,3 +36,7 @@ frp 参考文档
 [配置多级域名](https://www.centos.bz/2018/06/nginx-%E5%92%8C-frp%E5%85%B1%E7%94%A880%E7%AB%AF%E5%8F%A3/)
 
 [配置nginx](https://xuexb.github.io/learn-nginx/example/domain.html#%E5%AD%90%E5%9F%9F%E5%90%8D%E8%BD%AC%E5%8F%91%E5%88%B0%E5%AD%90%E7%9B%AE%E5%BD%95)
+
+nginx 启动和关闭
+
+service nginx start/stop
