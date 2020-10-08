@@ -12,7 +12,7 @@ while [ 1 -le 6 ]
 do
   echo "git pull"
   # 拉取后不要显示文本
-  git pull|grep ^x  # https://github.com/IBAS0742/www.sunibas.cn.static.git
+  # git pull|grep ^x  # https://github.com/IBAS0742/www.sunibas.cn.static.git
 
   echo "unzip"
   ./zips/unzip.sh
@@ -28,6 +28,7 @@ do
   sudo cp "${homePath}${staticPath}/nginx.conf/public.conf" "/etc/nginx/conf.d/"
 
   echo "update bing"
+  cd codes
   sudo node "${homePath}${staticPath}/codes/getBingPicture.js"
 
   echo "over one turn"
