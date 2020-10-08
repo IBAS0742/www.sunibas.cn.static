@@ -30,3 +30,7 @@ git clone https://github.com/IBAS0742/www.sunibas.cn.static.git
 | 80   | http   |
 | 7000   | 内网穿透(服务器端口)   |
 | 7001   | 内网穿透（知网服务端口）   |
+
+frp 参考文档 
+
+https://www.centos.bz/2018/06/nginx-%E5%92%8C-frp%E5%85%B1%E7%94%A880%E7%AB%AF%E5%8F%A3/
