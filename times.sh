@@ -11,7 +11,7 @@ staticPath="www.sunibas.cn.static/"
 while [ 1 -le 6 ]
 do
   echo "git pull"
-  git pull -q # https://github.com/IBAS0742/www.sunibas.cn.static.git
+  git pull --no-ff # https://github.com/IBAS0742/www.sunibas.cn.static.git
 
   echo "unzip"
   ./zips/unzip.sh
