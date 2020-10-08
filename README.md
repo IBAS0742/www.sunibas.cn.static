@@ -29,8 +29,10 @@ git clone https://github.com/IBAS0742/www.sunibas.cn.static.git
 | 443   | https   |
 | 80   | http   |
 | 7000   | 内网穿透(服务器端口)   |
-| 7001   | 内网穿透（知网服务端口）   |
+| 7001   | 内网穿透（服务链接端口）  |
 
 frp 参考文档 
 
-https://www.centos.bz/2018/06/nginx-%E5%92%8C-frp%E5%85%B1%E7%94%A880%E7%AB%AF%E5%8F%A3/
+[配置多级域名](https://www.centos.bz/2018/06/nginx-%E5%92%8C-frp%E5%85%B1%E7%94%A880%E7%AB%AF%E5%8F%A3/)
+
+[配置nginx](https://xuexb.github.io/learn-nginx/example/domain.html#%E5%AD%90%E5%9F%9F%E5%90%8D%E8%BD%AC%E5%8F%91%E5%88%B0%E5%AD%90%E7%9B%AE%E5%BD%95)
