@@ -12,7 +12,7 @@ while [ 1 -le 6 ]
 do
   echo "git pull"
   # 拉取后不要显示文本
-  git pull|grep ^x  # https://github.com/IBAS0742/www.sunibas.cn.static.git
+  git pull|echo ^x  # https://github.com/IBAS0742/www.sunibas.cn.static.git
 
   echo "unzip"
   ./zips/unzip.sh
