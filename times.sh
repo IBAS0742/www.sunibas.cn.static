@@ -19,6 +19,12 @@ do
   echo "copy frps.ini"
   cp -f ./other.conf/frps.ini "${homePath}frp_0.22.0/frp_0.22.0_linux_386/frps.ini"
 
+  echo "copy nginx conf"
+  cp "${homePath}${staticPath}/nginx.conf/*.conf" "/etc/nginx/conf.d/"
+
+  echo "update bing"
+  node "${homePath}${staticPath}/codes/getBingPicture.js"
+
   echo "over one turn"
   sleep $interval;
 done
