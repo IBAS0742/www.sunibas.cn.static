@@ -20,7 +20,11 @@ do
   cp -f ./other.conf/frps.ini "${homePath}frp_0.22.0/frp_0.22.0_linux_386/frps.ini"
 
   echo "copy nginx conf"
-  cp "${homePath}${staticPath}/nginx.conf/*.conf" "/etc/nginx/conf.d/"
+  cp "${homePath}${staticPath}/nginx.conf/frp.conf" "/etc/nginx/conf.d/"
+  cp "${homePath}${staticPath}/nginx.conf/docs.conf" "/etc/nginx/conf.d/"
+  cp "${homePath}${staticPath}/nginx.conf/main.conf" "/etc/nginx/conf.d/"
+  cp "${homePath}${staticPath}/nginx.conf/main.https.conf" "/etc/nginx/conf.d/"
+  cp "${homePath}${staticPath}/nginx.conf/public.conf" "/etc/nginx/conf.d/"
 
   echo "update bing"
   node "${homePath}${staticPath}/codes/getBingPicture.js"
