@@ -25,7 +25,7 @@ do
   echo "copy nginx conf"
   sudo cp "${homePath}${staticPath}/nginx.conf/frp.conf" "/etc/nginx/conf.d/"
   sudo cp "${homePath}${staticPath}/nginx.conf/docs.conf" "/etc/nginx/conf.d/"
-  # sudo cp "${homePath}${staticPath}/nginx.conf/main.conf" "/etc/nginx/conf.d/"
+  sudo cp "${homePath}${staticPath}/nginx.conf/main.conf" "/etc/nginx/conf.d/"
   # sudo cp "${homePath}${staticPath}/nginx.conf/main.https.conf" "/etc/nginx/conf.d/"
   sudo cp "${homePath}${staticPath}/nginx.conf/public.conf" "/etc/nginx/conf.d/"
 
