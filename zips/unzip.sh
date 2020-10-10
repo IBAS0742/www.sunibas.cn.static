@@ -42,8 +42,8 @@ if [ ! -x "${homePath}${staticPath}pages/FakeData" ]; then
   cd "${homePath}${staticPath}pages/FakeData"
   tar -vxf "${homePath}${staticPath}zips/FakeData.tar"
 fi
-if [ ! -x "${homePath}${staticPath}pages/FakeData" ]; then
-  mkdir "${homePath}${staticPath}pages/FakeData"
-  cd "${homePath}${staticPath}pages/FakeData"
-  tar -vxf "${homePath}${staticPath}zips/FakeData.tar"
+if [ ! -x "${homePath}${staticPath}pages/Cesium-1.71" ]; then
+  mkdir "${homePath}${staticPath}pages/Cesium-1.71"
+  cd "${homePath}${staticPath}pages/Cesium-1.71"
+  unzip "${homePath}${staticPath}zips/Cesium-1.71.zip"
 fi
