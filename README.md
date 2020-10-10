@@ -39,4 +39,13 @@ frp 参考文档
 
 nginx 启动和关闭
 
+```shell script
 service nginx start/stop
+```
+
+git 重置
+
+```shell script
+git reset --hard acb28f2114413378d48ae3b257dca62a1cd29d0f【想要恢复到的版本commit id】 
+git push origin HEAD --force
+```
