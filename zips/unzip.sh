@@ -42,3 +42,8 @@ if [ ! -x "${homePath}${staticPath}pages/FakeData" ]; then
   cd "${homePath}${staticPath}pages/FakeData"
   tar -vxf "${homePath}${staticPath}zips/FakeData.tar"
 fi
+if [ ! -x "${homePath}${staticPath}pages/FakeData" ]; then
+  mkdir "${homePath}${staticPath}pages/FakeData"
+  cd "${homePath}${staticPath}pages/FakeData"
+  tar -vxf "${homePath}${staticPath}zips/FakeData.tar"
+fi
