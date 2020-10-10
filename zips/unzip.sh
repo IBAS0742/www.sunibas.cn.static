@@ -32,3 +32,18 @@ if [ ! -x "${homePath}${staticPath}pages/utils" ]; then
   cd "${homePath}${staticPath}pages/utils"
   tar -vxf "${homePath}${staticPath}zips/utils.tar"
 fi
+if [ ! -x "${homePath}${staticPath}pages/pdf" ]; then
+  mkdir "${homePath}${staticPath}pages/pdf"
+  cd "${homePath}${staticPath}pages/pdf"
+  tar -vxf "${homePath}${staticPath}zips/pdf.tar"
+fi
+if [ ! -x "${homePath}${staticPath}pages/FakeData" ]; then
+  mkdir "${homePath}${staticPath}pages/FakeData"
+  cd "${homePath}${staticPath}pages/FakeData"
+  tar -vxf "${homePath}${staticPath}zips/FakeData.tar"
+fi
+if [ ! -x "${homePath}${staticPath}pages/Cesium-1.71" ]; then
+  mkdir "${homePath}${staticPath}pages/Cesium-1.71"
+  cd "${homePath}${staticPath}pages/Cesium-1.71"
+  unzip "${homePath}${staticPath}zips/Cesium-1.71.zip"
+fi

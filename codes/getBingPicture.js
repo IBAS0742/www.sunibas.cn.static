@@ -1,5 +1,7 @@
 const https = require('https');
 const fs = require('fs');
+const path = require('path');
+const getStaticPath = require('./getPath').getStaticPath;
 
 let query = function (url) {
     return new Promise(function (s) {
@@ -85,7 +87,9 @@ let pic = new (class {
         return this;
     }
 })(function (pic) {
-    fs.writeFileSync('./../jsons/bingPic.json',JSON.stringify(pic,),'utf-8');
+    fs.writeFileSync(path.join(getStaticPath(),"jsons/bingPic.json"),JSON.stringify(pic,),'utf-8');
+    console.log('获取完成');
+    process.exit();
 });
 
 setInterval(function () {
