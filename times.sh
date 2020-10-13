@@ -2,7 +2,7 @@
 
 # 定时任务
 
-#nohup ./autoRebootWWWSUNIBASCN_new.sh > a.log 2>&1 &
+#nohup ./time.sh > a.log 2>&1 &
 
 interval=3600; #监听的间隔时间
 homePath="/home/ubuntu/"
