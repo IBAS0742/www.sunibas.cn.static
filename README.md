@@ -12,6 +12,8 @@
 
 4. jsons 一些静态资源，是 codes 生成的，所以不需要同步到 git
 
+5. cdn 是 cdn 加速
+
 ## 服务器配置相关
 
 git clone https://github.com/IBAS0742/www.sunibas.cn.static.git
