@@ -27,11 +27,6 @@ if [ ! -x "${homePath}${staticPath}pages/modis" ]; then
   cd "${homePath}${staticPath}pages/modis"
   tar -vxf "${homePath}${staticPath}zips/modis.tar"
 fi
-if [ ! -x "${homePath}${staticPath}pages/utils" ]; then
-  mkdir "${homePath}${staticPath}pages/utils"
-  cd "${homePath}${staticPath}pages/utils"
-  tar -vxf "${homePath}${staticPath}zips/utils.tar"
-fi
 if [ ! -x "${homePath}${staticPath}pages/pdf" ]; then
   mkdir "${homePath}${staticPath}pages/pdf"
   cd "${homePath}${staticPath}pages/pdf"
@@ -46,4 +41,9 @@ if [ ! -x "${homePath}${staticPath}pages/Cesium-1.71" ]; then
   mkdir "${homePath}${staticPath}pages/Cesium-1.71"
   cd "${homePath}${staticPath}pages/Cesium-1.71"
   unzip "${homePath}${staticPath}zips/Cesium-1.71.zip"
+fi
+if [ ! -x "${homePath}${staticPath}pages/utils" ]; then
+  mkdir "${homePath}${staticPath}pages/utils"
+  cd "${homePath}${staticPath}pages/utils"
+  unzip "${homePath}${staticPath}zips/sunibas.cn.utils.tar"
 fi
