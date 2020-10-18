@@ -45,5 +45,5 @@ fi
 if [ ! -x "${homePath}${staticPath}pages/utils" ]; then
   mkdir "${homePath}${staticPath}pages/utils"
   cd "${homePath}${staticPath}pages/utils"
-  unzip "${homePath}${staticPath}zips/sunibas.cn.utils.tar"
+  tar -vxf "${homePath}${staticPath}zips/sunibas.cn.utils.tar"
 fi
