@@ -51,3 +51,10 @@ git 重置
 git reset --hard acb28f2114413378d48ae3b257dca62a1cd29d0f【想要恢复到的版本commit id】 
 git push origin HEAD --force
 ```
+
+cdn 的文件放置及使用方法
+
+```text
+1. 将文件复制到服务器中的 /home/ubuntu/cdn 目录下
+2. 访问 ip/cdn/文件名
+```

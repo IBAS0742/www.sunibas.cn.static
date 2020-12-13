@@ -27,10 +27,10 @@ if [ ! -x "${homePath}${staticPath}pages/modis" ]; then
   cd "${homePath}${staticPath}pages/modis"
   tar -vxf "${homePath}${staticPath}zips/modis.tar"
 fi
-if [ ! -x "${homePath}${staticPath}pages/pdf" ]; then
-  mkdir "${homePath}${staticPath}pages/pdf"
-  cd "${homePath}${staticPath}pages/pdf"
-  tar -vxf "${homePath}${staticPath}zips/pdf.tar"
+if [ ! -x "${homePath}${staticPath}pages/PDF" ]; then
+  mkdir "${homePath}${staticPath}pages/PDF"
+  cd "${homePath}${staticPath}pages/PDF"
+  tar -vxf "${homePath}${staticPath}zips/PDF.tar"
 fi
 if [ ! -x "${homePath}${staticPath}pages/FakeData" ]; then
   mkdir "${homePath}${staticPath}pages/FakeData"
