@@ -47,3 +47,8 @@ if [ ! -x "${homePath}${staticPath}pages/utils" ]; then
   cd "${homePath}${staticPath}pages/utils"
   tar -vxf "${homePath}${staticPath}zips/sunibas.cn.utils.tar"
 fi
+if [ ! -x "${homePath}${staticPath}pages/trans" ]; then
+  mkdir "${homePath}${staticPath}pages/trans"
+  cd "${homePath}${staticPath}pages/trans"
+  tar -vxf "${homePath}${staticPath}zips/trans.tar"
+fi
