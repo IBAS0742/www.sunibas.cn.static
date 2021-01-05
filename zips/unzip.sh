@@ -52,3 +52,8 @@ if [ ! -x "${homePath}${staticPath}pages/trans" ]; then
   cd "${homePath}${staticPath}pages/trans"
   tar -vxf "${homePath}${staticPath}zips/trans.tar"
 fi
+if [ ! -x "${homePath}${staticPath}pages/idcard" ]; then
+  mkdir "${homePath}${staticPath}pages/idcard"
+  cd "${homePath}${staticPath}pages/idcard"
+  tar -vxf "${homePath}${staticPath}zips/idcard.tar"
+fi
