@@ -57,3 +57,8 @@ if [ ! -x "${homePath}${staticPath}pages/idcard" ]; then
   cd "${homePath}${staticPath}pages/idcard"
   tar -vxf "${homePath}${staticPath}zips/idcard.tar"
 fi
+if [ ! -x "${homePath}${staticPath}pages/AboutRecording" ]; then
+  mkdir "${homePath}${staticPath}pages/AboutRecording"
+  cd "${homePath}${staticPath}pages/AboutRecording"
+  tar -vxf "${homePath}${staticPath}zips/AboutRecording.tar"
+fi
